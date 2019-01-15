@@ -2,7 +2,8 @@
 
  def sum_of_3_or_5_multiples(n)
  	r = 0
-	if n >= 0 && n.is_a? Integer 
+ 	var = n.is_a? Integer 
+	if ( var && 0 < n)
 	(1..n-1).each{|i| i%3 ==0 || i%5 ==0? r += i : i}
 	return r 
 	else 
